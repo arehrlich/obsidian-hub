@@ -1,0 +1,54 @@
+---
+creation date: <% tp.file.creation_date() %>
+modification date: <% tp.file.last_modified_date() %>
+---
+
+<< [[<% tp.date.now("YYYY-MM-DD", -1) %>]] | [[<% tp.date.now("YYYY-MM-DD", 1) %>]] >>
+
+# <% tp.date.now("dddd, MMM DD, YYYY") %>
+
+### Agenda
+
+
+### Journal
+
+
+### Overdue Tasks
+```tasks
+not done
+due before <% tp.date.now("YYYY-MM-DD") %>
+```
+
+### Scheduled Tasks
+```tasks
+not done
+due on <% tp.date.now("YYYY-MM-DD") %>
+```
+
+### Upcoming Tasks
+```tasks
+not done
+due after <% tp.date.now("YYYY-MM-DD") %>
+due before <% tp.date.now("YYYY-MM-DD",8) %>
+```
+
+### OnGoing Work
+```tasks
+description includes #Continue 
+```
+
+### Done Today
+```tasks
+done on <% tp.date.now("YYYY-MM-DD") %>
+```
+
+
+---
+- <% tp.web.daily_quote() %>
+---
+
+
+
+
+
+
